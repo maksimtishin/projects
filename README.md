@@ -1,3 +1,5 @@
-Started learning cybersecuirty
+Learning Networking and Cybersecurity - Maksim Tishin
 
-https://github.com/technicaldada/pentbox
+1) HoneyPot project
+
+Here is the guide on installation - https://github.com/technicaldada/pentbox
