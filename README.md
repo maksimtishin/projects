@@ -5,13 +5,8 @@ Hi there, I'm Maksim! A cybersecurity enthusiast learning about networking and d
 (Projects)
 
 Powershell commands
+https://github.com/maksimtishin/projects/blob/main/PowerShell%20Commands
 
-
-2) CMD commands Linux
-
-
-
-1) HoneyPot project
-
+HoneyPot project
 Here is the guide on installation - https://github.com/technicaldada/pentbox
 
