@@ -4,11 +4,11 @@ Hi there, I'm Maksim! A cybersecurity enthusiast learning about networking and d
 
 (Projects)
 
-Powershell commands
+1. PowerShell commands
 
 https://github.com/maksimtishin/projects/blob/main/PowerShell%20Commands
 
-HoneyPot project
+2. HoneyPot project
 
-Here is the guide on installation - https://github.com/technicaldada/pentbox
+https://github.com/technicaldada/pentbox
 
