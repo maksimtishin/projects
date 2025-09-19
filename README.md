@@ -4,7 +4,8 @@ Hi there, I'm Maksim! A cybersecurity enthusiast learning about networking and d
 
 (Projects)
 
-1) CMD commands Windows
+Powershell commands
+
 
 2) CMD commands Linux
 
