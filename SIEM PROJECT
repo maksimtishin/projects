@@ -1,0 +1,56 @@
+1. Download the Ubuntu iso and install it in a VM.
+
+If copying from your computer to your VM doesn't work, then use the following commands in the terminal:
+
+sudo apt install open-vm-tools open-vm-tools-desktop
+
+Then reboot.
+
+2. Install the curl command:
+
+sudo apt install curl
+
+3. (Go to the Wazuah website for further information)
+Input these commands:
+
+sudo bash
+
+curl -sO https://packages.wazuh.com/4.13/wazuh-install.sh && sudo bash ./wazuh-install.sh -a
+
+4. After installation is complete, you'll get a username and password to use. Find your VM's IP address by running (ip a), then go to the Firefox browser and paste it in to see the login screen.
+
+Log in with the provided credentials, then press "Deploy new agent."
+
+5. Now follow the guide and pick whatever machine you'll want to feed data from.
+
+I chose Linux (DEB amd64)
+
+The server address is your VM IP, which is running Wazuah. 
+(Can remember the server address for ease of use)
+
+Assign agent name.
+
+6. Create another Ubuntu VM, into which we will copy and paste the curl command into which will install the agent. (Install the copy-paste tools again)
+
+Run "sudo bash" to become root on the other VM, and paste the curl command to download the agent.
+
+wget https://packages.wazuh.com/4.x/apt/pool/main/w/wazuh-agent/wazuh-agent_4.13.1-1_amd64.deb && sudo WAZUH_MANAGER='192.168.202.134' WAZUH_AGENT_NAME='UbuntuUser' dpkg -i ./wazuh-agent_4.13.1-1_amd64.deb
+
+To start the agent, paste the next curl command into the terminal.
+
+sudo systemctl daemon-reload sudo systemctl enable wazuh-agent sudo systemctl start wazuh-agentsudo systemctl daemon-reloadsudo systemctl enable wazuh-agentsudo systemctl start wazuh-agent
+
+sudo systemctl daemon-reload 
+sudo systemctl enable wazuh-agent 
+sudo systemctl start wazuh-agent
+
+7. Go back to home page and the agent should show as active. Click (active) and then you'll see more info about agent.
+
+Now you can see vulnerabilities, what the agent is doing, and lots of informaiton which is useful for keeping a device secure.
+
+Go ahead and go back to the agent and run some commands. Then go back to the server and you'll see everything being logged.
+
+8. Deploying a Windows agent. Same steps as before install another Windows VM and follow the installation guide.
+
+
+
